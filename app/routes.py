@@ -13,9 +13,8 @@ etiquetas_clases = ["Alopecurus myosuroides", "Apera spica-venti", "Beta vulgari
                     "Stellaria media", "Triticum aestivum", "Zea mays"]
 
 def gen():
-    # cap = cv2.VideoCapture(2)
-    cap = cv2.VideoCapture('http://192.168.1.6:4747/video')
-
+    cap = cv2.VideoCapture(0)
+    #cap = cv2.VideoCapture('http://192.168.1.6:4747/video')
     while True:
         ret, frame = cap.read()
         if not ret:

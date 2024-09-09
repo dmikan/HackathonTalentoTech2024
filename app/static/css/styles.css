@@ -1,12 +1,24 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    background-color: #e8f5e9;
     margin: 0;
     padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #4caf50;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.logo img {
+    max-height: 80px;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
     padding: 20px;
     background: #fff;
@@ -14,8 +26,7 @@ body {
     border-radius: 8px;
 }
 
-h1 {
-    text-align: center;
+h1, h2 {
     color: #333;
 }
 
@@ -24,7 +35,7 @@ h1 {
     margin: 20px 0;
 }
 
-video {
+video, img {
     width: 100%;
     max-width: 640px;
     border: 1px solid #ddd;
@@ -39,12 +50,38 @@ button {
     padding: 10px;
     font-size: 16px;
     color: #fff;
-    background-color: #007bff;
+    background-color: #4caf50;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #388e3c;
+}
+
+.plant-info {
+    margin-top: 30px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #f1f1f1;
+}
+
+#plantInfoTable {
+    background-color: #f9f9f9;
+    border-radius: 8px;
 }

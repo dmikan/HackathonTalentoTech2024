@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
     toggleButton.addEventListener('click', function() {
         if (videoFeed.style.display === 'none') {
             videoFeed.style.display = 'block';
-            toggleButton.textContent = 'Hide Video';
+            toggleButton.textContent = 'Ocultar Video';
         } else {
             videoFeed.style.display = 'none';
-            toggleButton.textContent = 'Show Video';
+            toggleButton.textContent = 'Mostrar Video';
         }
     });
 });

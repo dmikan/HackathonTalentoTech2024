@@ -7,13 +7,42 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" id="logo">
+        </div>
+        <h1>Monitor de Plantas en Tiempo Real</h1>
+    </header>
+    
     <div class="container">
-        <h1>Video en Tiempo Real con Predicción</h1>
         <div class="video-container">
             <img id="videoFeed" src="{{ url_for('video_feed') }}" alt="Video en tiempo real">
         </div>
-        <button id="toggleButton">Toggle Video</button>
+        <button id="toggleButton">Ocultar Video</button>
+        
+        <div class="plant-info">
+            <h2>Información de la Planta</h2>
+            <table id="plantInfoTable">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Estado de Nutrientes</th>
+                        <th>Temperatura Ideal</th>
+                        <th>Humedad Ideal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="plantName">Sinapis arvensis</td>
+                        <td id="nutrientStatus">Suficiente</td>
+                        <td id="idealTemp">15-25°C</td>
+                        <td id="idealHumidity">60-70%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
     <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 </body>
 </html>
+
