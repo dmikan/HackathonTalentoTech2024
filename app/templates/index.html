@@ -13,7 +13,7 @@
         </div>
         <h1>Monitor de Plantas en Tiempo Real</h1>
     </header>
-    
+
     <div class="container">
         <div class="video-container">
             <img id="videoFeed" src="{{ url_for('video_feed') }}" alt="Video en tiempo real">
@@ -27,16 +27,20 @@
                     <tr>
                         <th>Nombre</th>
                         <th>Estado de Nutrientes</th>
+                        <th>Estado de Enfermedad</th>
                         <th>Temperatura Ideal</th>
                         <th>Humedad Ideal</th>
+                        <th>Detalles</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td id="plantName">Sinapis arvensis</td>
                         <td id="nutrientStatus">Suficiente</td>
+                        <td id="diseaseStatus">Ninguna</td>
                         <td id="idealTemp">15-25°C</td>
                         <td id="idealHumidity">60-70%</td>
+                        <td id="plantDetails">Información adicional aparecerá aquí.</td>
                     </tr>
                 </tbody>
             </table>
@@ -45,4 +49,3 @@
     <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 </body>
 </html>
-
